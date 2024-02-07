@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/DescriptionTextView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="21dp"
         android:backgroundTint="#00AF5B"
         android:text="Create Account"
         android:textColor="#ffffff" />

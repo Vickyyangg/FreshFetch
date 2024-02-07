@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity"
+    >
+
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="466dp"
+        android:layout_weight="1"
+        android:backgroundTint="#00AF5B"
+        android:fontFamily="@font/font"
+        android:text="Create Account"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="306dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/btn_create"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="-19dp"
+        android:background="#F3F3F3" />
+
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="207dp"
+        android:text="Full Name" />
+
+    <TextView
+        android:id="@+id/phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="291dp"
+        android:contentDescription="Phone Number"
+        android:text="Phone Number"
+        android:textSize="14dp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="381dp"
+        android:text="Password"
+        android:textSize="14dp"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="400dp"
+        android:drawableLeft="@drawable/icons8_password_18"
+        android:drawablePadding="14dp"
+        android:ems="10"
+        android:fontFamily="@font/font"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/phone_input"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="312dp"
+        android:drawableLeft="@drawable/icons8_phone_18"
+        android:drawablePadding="14dp"
+        android:ems="10"
+        android:fontFamily="@font/font"
+        android:hint="Enter your number"
+        android:inputType="phone"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="227dp"
+        android:drawableLeft="@drawable/icons8_user_18"
+        android:drawablePadding="14dp"
+        android:ems="10"
+        android:fontFamily="@font/font"
+        android:hint="Enter your name"
+        android:inputType="text"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/font"
+        android:text="Ship and Track anytime"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/font"
+        android:text="Get great experience with us now"
+        android:textColor="#368166"
+        android:textSize="16dp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="166dp"
+        android:text="OR"
+        android:textColor="@android:color/darker_gray"
+        android:fontFamily="@font/font"/>
+
+    <Button
+        android:id="@+id/Google"
+        android:layout_width="246dp"
+        android:layout_height="59dp"
+        android:layout_weight= "1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="107dp"
+        android:backgroundTint="#DEE4E1"
+        android:drawableLeft="@drawable/icons8_google_24"
+        android:drawablePadding="0dp"
+        android:fontFamily="@font/font"
+        android:text="Sign Up with Google"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/Apple"
+        android:layout_width="248dp"
+        android:layout_height="62dp"
+        android:layout_weight= "1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:layout_marginRight="10dp"
+        android:text="Sign Up with Apple"
+        android:fontFamily="@font/font"
+        android:backgroundTint="@color/black"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/icons8_apple_24"/>
+
+    <Button
+        android:id="@+id/BSI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:backgroundTint="@color/lightgreen"
+        android:enabled="false"
+        android:fontFamily="@font/font"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/BSU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginRight="222dp"
+        android:backgroundTint="@color/gray"
+        android:enabled="false"
+        android:clickable="false"
+        android:fontFamily="@font/font"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>
