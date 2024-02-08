@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,11 +17,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="75dp"
         android:layout_marginTop="377dp"
-        android:layout_weight="1"
         android:backgroundTint="#00AF5B"
         android:fontFamily="@font/font"
-        android:text="Login"
-        android:textSize="20dp" />
+        android:text="@string/login_"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/username_label"
@@ -32,7 +30,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="68dp"
         android:layout_marginTop="207dp"
-        android:text="Full Name" />
+        android:text="@string/full_name"
+        tools:ignore="RelativeOverlap" />
 
     <EditText
         android:id="@+id/username_input"
@@ -43,13 +42,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="68dp"
         android:layout_marginTop="227dp"
-        android:drawableLeft="@drawable/icons8_user_18"
+        android:drawableStart="@drawable/icons8_user_18"
         android:drawablePadding="14dp"
         android:ems="10"
         android:fontFamily="@font/font"
-        android:hint="Enter your name"
+        android:hint="@string/username_hint"
         android:inputType="text"
-        android:textSize="16dp" />
+        android:textSize="16sp"
+        android:autofillHints=""
+        tools:ignore="RelativeOverlap" />
 
     <TextView
         android:id="@+id/phone_label"
@@ -59,10 +60,10 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="68dp"
         android:layout_marginTop="292dp"
-        android:contentDescription="Phone Number"
-        android:text="Phone Number"
-        android:textSize="14dp"
-        tools:ignore="TextSizeCheck" />
+        android:contentDescription="@string/phone_number"
+        android:text="@string/phone_number"
+        android:textSize="14sp"
+        tools:ignore="RelativeOverlap,TextSizeCheck" />
 
     <EditText
         android:id="@+id/phone_input"
@@ -73,13 +74,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="68dp"
         android:layout_marginTop="311dp"
-        android:drawableLeft="@drawable/icons8_phone_18"
+        android:drawableStart="@drawable/icons8_phone_18"
         android:drawablePadding="14dp"
         android:ems="10"
         android:fontFamily="@font/font"
-        android:hint="Enter your number"
+        android:hint="@string/number_hint"
         android:inputType="phone"
-        android:textSize="16dp" />
+        android:textSize="16sp"
+        android:autofillHints=""
+        tools:ignore="RelativeOverlap" />
 
     <View
         android:layout_width="600dp"
@@ -103,8 +106,9 @@
         android:layout_marginStart="46dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/font"
-        android:text="Ship and Track anytime"
-        android:textSize="26dp" />
+        android:text="@string/login_header"
+        android:textSize="26sp"
+        tools:ignore="RelativeOverlap" />
 
     <TextView
         android:id="@+id/textView3"
@@ -172,9 +176,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="129dp"
-        android:layout_marginEnd="99dp"
-        android:layout_marginRight="99dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
         android:backgroundTint="@color/lightgreen"
         android:enabled="true"
         android:fontFamily="@font/font"
@@ -190,9 +194,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="129dp"
-        android:layout_marginEnd="210dp"
-        android:layout_marginRight="210dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="221dp"
+        android:layout_marginRight="221dp"
         android:backgroundTint="@color/gray"
         android:clickable="false"
         android:enabled="false"
