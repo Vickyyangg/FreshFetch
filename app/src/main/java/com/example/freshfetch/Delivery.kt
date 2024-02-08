@@ -1,18 +1,16 @@
 package com.example.project
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import com.example.freshfetch.databinding.ActivityDeliveryBinding
 
 
 class Delivery : AppCompatActivity() {
+    private lateinit var binding: ActivityDeliveryBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_delivery)
+        binding = ActivityDeliveryBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         val items = arrayListOf(
             Items("Rice","Fresh rice imported directly from farm"),
             Items("Tomato","Fresh Tomatoes imported from organically planted farm"),
@@ -21,11 +19,6 @@ class Delivery : AppCompatActivity() {
             Items("Lettuce","Fresh Lettuce imported from farms"),
             Items("Cherry","Directly picked and imported fresh")
         )
-        val nameList = findViewById<RecyclerView>(R.id.itemLists)
-        nameList.apply {
-            layoutManager = LinearLayoutManager(this@Delivery)
-            adapter = ItemAdapter(items)
-        }
 
     }
 
