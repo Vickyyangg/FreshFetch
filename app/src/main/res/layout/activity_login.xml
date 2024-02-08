@@ -7,6 +7,20 @@
     tools:context=".MainActivity"
     >
 
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/baseline_arrow_back_24" />
 
     <Button
         android:id="@+id/btn_create"
@@ -15,8 +29,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="377dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="495dp"
         android:backgroundTint="#00AF5B"
         android:fontFamily="@font/font"
         android:text="@string/login_"
@@ -28,8 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="207dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="308dp"
         android:text="@string/full_name"
         tools:ignore="RelativeOverlap" />
 
@@ -40,8 +54,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="227dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="329dp"
+        android:autofillHints=""
         android:drawableStart="@drawable/icons8_user_18"
         android:drawablePadding="14dp"
         android:ems="10"
@@ -49,7 +64,6 @@
         android:hint="@string/username_hint"
         android:inputType="text"
         android:textSize="16sp"
-        android:autofillHints=""
         tools:ignore="RelativeOverlap" />
 
     <TextView
@@ -58,8 +72,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="401dp"
         android:contentDescription="@string/phone_number"
         android:text="@string/phone_number"
         android:textSize="14sp"
@@ -71,9 +85,10 @@
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="311dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="421dp"
+        android:autofillHints=""
         android:drawableStart="@drawable/icons8_phone_18"
         android:drawablePadding="14dp"
         android:ems="10"
@@ -81,7 +96,6 @@
         android:hint="@string/number_hint"
         android:inputType="phone"
         android:textSize="16sp"
-        android:autofillHints=""
         tools:ignore="RelativeOverlap" />
 
     <View
@@ -90,10 +104,10 @@
         android:layout_alignBottom="@+id/btn_create"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="11dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginBottom="-21dp"
+        android:layout_marginBottom="-65dp"
         android:background="#D6D6D6" />
 
     <TextView
@@ -103,8 +117,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="96dp"
         android:fontFamily="@font/font"
         android:text="@string/login_header"
         android:textSize="26sp"
@@ -117,13 +131,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="140dp"
         android:fontFamily="@font/font"
-        android:text="Get great experience with us now"
+        android:text="@string/signup_description"
         android:textColor="#368166"
-        android:textSize="16dp"
-        tools:ignore="TextSizeCheck" />
+        android:textSize="16sp"
+        tools:ignore="RelativeOverlap,TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView4"
@@ -131,9 +145,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="268dp"
         android:fontFamily="@font/font"
-        android:text="OR"
+        android:text="@string/or"
         android:textColor="@android:color/darker_gray" />
 
     <Button
@@ -142,15 +156,14 @@
         android:layout_height="59dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="155dp"
-        android:layout_weight="1"
+        android:layout_marginBottom="174dp"
         android:backgroundTint="#DEE4E1"
         android:drawableLeft="@drawable/icons8_google_24"
         android:drawablePadding="0dp"
         android:fontFamily="@font/font"
-        android:text="Sign Up with Google"
+        android:text="@string/google_signup"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="18sp"
         tools:ignore="TextSizeCheck" />
 
     <Button
@@ -160,7 +173,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="83dp"
+        android:layout_marginBottom="92dp"
         android:layout_weight="1"
         android:backgroundTint="@color/black"
         android:drawableLeft="@drawable/icons8_apple_24"
@@ -176,9 +189,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="111dp"
-        android:layout_marginRight="111dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
         android:backgroundTint="@color/lightgreen"
         android:enabled="true"
         android:fontFamily="@font/font"
@@ -194,9 +207,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="221dp"
-        android:layout_marginRight="221dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="246dp"
+        android:layout_marginRight="246dp"
         android:backgroundTint="@color/gray"
         android:clickable="false"
         android:enabled="false"
