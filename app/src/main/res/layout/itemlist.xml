@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Rice"
         android:textSize="18sp"
-        android:fontFamily="@font/fony1"/>
+        android:fontFamily="@font/font"/>
 
     <TextView
         android:id="@+id/item_description"
