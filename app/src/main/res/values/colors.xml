@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#9EB7B4</color>
     <color name="lightgreen">#71B978</color>
+    <color name="palegreen">#F7FFF3</color>
+    <color name="vingreen">#66A882</color>
+    <color name="green">#189944</color>
 </resources>

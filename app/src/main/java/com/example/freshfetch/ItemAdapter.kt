@@ -25,6 +25,7 @@ class ItemAdapter(private val ListItem:ArrayList<Items>):RecyclerView.Adapter<It
         fun bind(item: Items) {
             binding.itemName.text = item.name
             binding.itemDescription.text = item.description
+            binding.imageView.setImageResource(item.image)
         }
     }
 }
