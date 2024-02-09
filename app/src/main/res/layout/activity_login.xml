@@ -104,10 +104,10 @@
         android:layout_alignBottom="@+id/btn_create"
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="11dp"
+        android:layout_marginStart="13dp"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginBottom="-65dp"
+        android:layout_marginBottom="-14dp"
         android:background="#D6D6D6" />
 
     <TextView
@@ -156,7 +156,7 @@
         android:layout_height="59dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="174dp"
+        android:layout_marginBottom="95dp"
         android:backgroundTint="#DEE4E1"
         android:drawableLeft="@drawable/icons8_google_24"
         android:drawablePadding="0dp"
@@ -173,7 +173,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="25dp"
         android:layout_weight="1"
         android:backgroundTint="@color/black"
         android:drawableLeft="@drawable/icons8_apple_24"
