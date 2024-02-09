@@ -44,16 +44,16 @@
         android:layout_marginTop="77dp" />
 
     <ImageButton
-        android:layout_width="48dp"
+        android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="330dp"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="81dp"
         android:layout_marginEnd="33dp"
         android:background="@drawable/notification__2_"
-        android:scaleType="fitCenter"
-        android:contentDescription="bell" />
+        android:contentDescription="bell"
+        android:scaleType="fitCenter" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/itemLists"

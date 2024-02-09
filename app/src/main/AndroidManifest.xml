@@ -13,11 +13,13 @@
         android:theme="@style/Theme.FreshFetch"
         tools:targetApi="31">
         <activity
-            android:name=".signup"
+            android:name=".SignUp"
             android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="false" />
+        <activity android:name="com.example.project.Delivery"
+            android:exported="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,10 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".SignUp"
-            android:exported="false" />
 
     </application>
 

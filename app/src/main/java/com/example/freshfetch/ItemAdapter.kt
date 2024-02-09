@@ -21,6 +21,7 @@ class ItemAdapter(private val ListItem:ArrayList<Items>):RecyclerView.Adapter<It
 
     class ItemViewHolder(private val binding: ItemlistBinding) :
         RecyclerView.ViewHolder(binding.root) {
+       //Binding the id with data from itemlist.xml
         fun bind(item: Items) {
             binding.itemName.text = item.name
             binding.itemDescription.text = item.description
