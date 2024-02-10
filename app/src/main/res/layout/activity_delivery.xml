@@ -11,8 +11,8 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="9dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
         android:layout_width="48dp"
         android:layout_height="48dp"
         app:cardCornerRadius="50dp">
@@ -27,8 +27,9 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_alignRight="@+id/cardView"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="330dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="298dp"
         android:layout_toLeftOf="@+id/cardView"
         android:src="@drawable/icons8_list_25" />
 
@@ -42,36 +43,34 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="77dp" />
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginLeft="48dp"/>
 
-    <ImageButton
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/SimpleSearch"
-        android:layout_marginStart="330dp"
-        android:layout_marginTop="81dp"
-        android:layout_marginEnd="33dp"
-        android:background="@drawable/notification__2_"
-        android:contentDescription="bell"
-        android:scaleType="fitCenter" />
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toEndOf="@+id/SimpleSearch"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="22dp"
+        android:src="@drawable/baseline_circle_notifications_24"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/itemLists"
         android:layout_width="wrap_content"
         android:layout_height="537dp"
+        android:padding="20dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="18dp"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="17dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="40dp" />
 
     <Button
         android:id="@+id/Deli"
@@ -79,13 +78,16 @@
         android:layout_height="38dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="42dp"
+        android:layout_marginStart="46dp"
         android:layout_marginTop="130dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="@color/PaleGreen"
         android:fontFamily="@font/font"
         android:text="@string/delivery_btn"
-        android:textSize="13sp"
-        android:textColor="@color/VinGreen"/>
+        android:textColor="@color/VinGreen"
+        android:textSize="13sp" />
 
     <Button
         android:id="@+id/button2"
@@ -93,10 +95,13 @@
         android:layout_height="38dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="129dp"
-        android:layout_marginEnd="44dp"
-        android:fontFamily="@font/font"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="@color/VinGreen"
+        android:fontFamily="@font/font"
         android:text="@string/pickup_btn" />
 
 
