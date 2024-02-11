@@ -48,7 +48,7 @@
         android:layout_marginLeft="48dp"/>
 
     <ImageView
-        android:layout_width="48dp"
+        android:layout_width="35dp"
         android:layout_height="48dp"
         android:layout_toEndOf="@+id/SimpleSearch"
         android:layout_marginTop="70dp"
@@ -65,10 +65,10 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="18dp"
+        android:layout_marginStart="16dp"
         android:layout_marginLeft="48dp"
         android:layout_marginTop="14dp"
-        android:layout_marginEnd="18dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginRight="48dp"
         android:layout_marginBottom="40dp" />
 

@@ -15,16 +15,17 @@ class Delivery : AppCompatActivity() {
         setContentView(binding.root)
 
         val items = arrayListOf(
-            Items("Rice", R.drawable.icons8_grain_24,"Fresh rice imported directly from farm"),
-            Items("Tomato", R.drawable.tomato,"Fresh Tomatoes imported from organic farm"),
-            Items("Cucumber",R.drawable.cucumber,"Fresh and Crunchy Cucumber"),
-            Items("Grapes",R.drawable.grapes,"Imported Freshly from Local farms"),
-            Items("Lettuce",R.drawable.lettuce,"Fresh Lettuce imported from farms"),
-            Items("Cherry",R.drawable.cherry,"Directly picked and imported fresh")
+            Items("Rice","$13", R.drawable.icons8_grain_24,"Fresh rice imported directly from farm"),
+            Items("Tomato", "$4", R.drawable.tomato,"Fresh Tomatoes imported from organic farm"),
+            Items("Cucumber", "$5",R.drawable.cucumber,"Fresh and Crunchy Cucumber"),
+            Items("Grapes", "$5.5",R.drawable.grapes,"Imported Freshly from Local farms"),
+            Items("Lettuce", "$3",R.drawable.lettuce,"Fresh Lettuce imported from farms"),
+            Items("Cherry", "$7.4",R.drawable.cherry,"Directly picked and imported fresh")
         )
         val adapter = ItemAdapter(items)
         binding.itemLists.adapter = adapter
         binding.itemLists.layoutManager = LinearLayoutManager(this)
+
     }
 
 

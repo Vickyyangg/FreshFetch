@@ -18,6 +18,7 @@
     <string name="signin_btn">Sign In</string>
     <string name="delivery_btn">Delivery</string>
     <string name="pickup_btn">Pick Up</string>
+    <string name="price">$12</string>
 
 
 </resources>
