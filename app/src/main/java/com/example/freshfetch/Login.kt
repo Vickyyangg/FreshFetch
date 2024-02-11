@@ -24,5 +24,14 @@ class Login : AppCompatActivity() {
                 startActivity(goBack)
             }
         })
+
+        binding.BSI.setOnClickListener (object : View.OnClickListener{
+          override fun onClick(view: View){
+              // Start the Home activity when the login button is clicked
+              val intent = Intent(this@Login, Home::class.java)
+              startActivity(intent)
+          }
+        })
+
     }
 }
