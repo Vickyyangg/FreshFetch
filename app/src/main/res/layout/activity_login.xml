@@ -80,7 +80,7 @@
         tools:ignore="RelativeOverlap,TextSizeCheck" />
 
     <EditText
-        android:id="@+id/phone_input"
+        android:id="@+id/passwordInput"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
@@ -89,14 +89,14 @@
         android:layout_marginStart="76dp"
         android:layout_marginTop="421dp"
         android:autofillHints=""
-        android:drawableStart="@drawable/icons8_phone_18"
+        android:drawableStart="@drawable/icons8_password_18"
         android:drawablePadding="14dp"
         android:ems="10"
         android:fontFamily="@font/font"
-        android:hint="@string/number_hint"
-        android:inputType="phone"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
         android:textSize="16sp"
-        tools:ignore="RelativeOverlap" />
+        tools:ignore="RelativeOverlap,TextFields" />
 
 
     <TextView
@@ -134,7 +134,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="268dp"
+        android:layout_marginBottom="238dp"
         android:fontFamily="@font/font"
         android:text="@string/or"
         android:textColor="@android:color/darker_gray" />

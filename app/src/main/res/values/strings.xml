@@ -21,6 +21,7 @@
     <string name="deli_btn">Delivery</string>
     <string name="pickup_btn">Pick Up</string>
     <string name="bestRice">Best Rice</string>
+    <string name="home_feature">Features</string>
     <string name="rice_description">Rice is a versatile staple known for its neutral flavor and essential role in global cuisines.</string>
 
 </resources>

@@ -87,6 +87,92 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="242dp" />
+        android:layout_marginTop="231dp" />
+
+    <TextView
+        android:layout_width="149dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="252dp"
+        android:fontFamily="@font/font"
+        android:text="@string/home_feature"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="106dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNearMe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lightgreen"
+                android:text="Near Me"
+                app:icon="@drawable/ic_near_me"
+                app:iconGravity="top" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOffers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lightgreen"
+                android:text="Offers"
+                app:icon="@drawable/ic_offers"
+                app:iconGravity="top" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPayment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lightgreen"
+                android:text="Payment"
+                app:icon="@drawable/ic_payment"
+                app:iconGravity="top" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/lightgreen"
+                android:text="Orders"
+                app:icon="@drawable/ic_orders"
+                app:iconGravity="top" />
+        </LinearLayout>
+    </LinearLayout>
+
 
 </RelativeLayout>

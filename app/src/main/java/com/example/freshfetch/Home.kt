@@ -21,7 +21,6 @@ class Home : AppCompatActivity() {
         val itemList = mutableListOf(
             Item(R.drawable.rice_card, "Best Rice", "Best Rice is a versatile staple known for its neutral flavor and essential role in global cuisines.", "$19"),
             Item(R.drawable.rice_card, "Pure Rice", "Pure Rice is a versatile staple known for its neutral flavor and essential role in global cuisines.", "$29"),
-            Item(R.drawable.rice_card, "Great Rice", "Great Rice is a versatile staple known for its neutral flavor and essential role in global cuisines.", "$12")
         )
 
         val adapter = MyAdapter(this, itemList)
