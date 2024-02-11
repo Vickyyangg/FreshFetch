@@ -17,21 +17,23 @@ class Login : AppCompatActivity() {
         setContentView(binding.root)
 
         //back button logic
-        binding.backButton.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(view: View) {
-                // goBack to Initial page when the back button is clicked
-                val goBack = Intent(this@Login, MainActivity::class.java)
-                startActivity(goBack)
-            }
-        })
+        binding.backButton.setOnClickListener {
+            val goBack = Intent(this@Login, MainActivity::class.java)
+            startActivity(goBack)
+        }
 
-        binding.BSI.setOnClickListener (object : View.OnClickListener{
-          override fun onClick(view: View){
-              // Start the Home activity when the login button is clicked
-              val intent = Intent(this@Login, Home::class.java)
-              startActivity(intent)
-          }
-        })
+        binding.btnLogin.setOnClickListener {
+            // Start the Home activity when the Sign Up button is clicked
+            val intent = Intent(this@Login, Home::class.java)
+            startActivity(intent)
+        }
+
+        binding.BSU.setOnClickListener {
+            // Start the Home activity when the Sign Up button is clicked
+            val intent = Intent(this@Login, SignUp::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

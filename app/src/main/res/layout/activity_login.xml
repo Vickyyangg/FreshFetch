@@ -23,7 +23,7 @@
         android:src="@drawable/baseline_arrow_back_24" />
 
     <Button
-        android:id="@+id/btn_create"
+        android:id="@+id/btnLogin"
         android:layout_width="247dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -98,17 +98,6 @@
         android:textSize="16sp"
         tools:ignore="RelativeOverlap" />
 
-    <View
-        android:layout_width="600dp"
-        android:layout_height="1dp"
-        android:layout_alignBottom="@+id/btn_create"
-        android:layout_alignParentStart="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="-65dp"
-        android:background="#D6D6D6" />
 
     <TextView
         android:id="@+id/textView2"
@@ -151,29 +140,13 @@
         android:textColor="@android:color/darker_gray" />
 
     <Button
-        android:id="@+id/Google"
-        android:layout_width="246dp"
-        android:layout_height="59dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="174dp"
-        android:backgroundTint="#DEE4E1"
-        android:drawableLeft="@drawable/icons8_google_24"
-        android:drawablePadding="0dp"
-        android:fontFamily="@font/font"
-        android:text="@string/google_signup"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        tools:ignore="TextSizeCheck" />
-
-    <Button
         android:id="@+id/Apple"
         android:layout_width="248dp"
         android:layout_height="62dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginRight="10dp"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="64dp"
         android:layout_weight="1"
         android:backgroundTint="@color/black"
         android:drawableLeft="@drawable/icons8_apple_24"
@@ -190,14 +163,31 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="224dp"
-        android:layout_marginEnd="77dp"
-        android:layout_marginRight="77dp"
-        android:backgroundTint="@color/lightgreen"
-        android:enabled="true"
+        android:layout_marginEnd="245dp"
+        android:layout_marginRight="245dp"
+        android:backgroundTint="@color/gray"
+        android:clickable="false"
+        android:enabled="false"
         android:fontFamily="@font/font"
-        android:text="Sign Up"
+        android:text="Sign In"
         android:textColor="@color/white"
         android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/Google"
+        android:layout_width="246dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="146dp"
+        android:backgroundTint="#DEE4E1"
+        android:drawableLeft="@drawable/icons8_google_24"
+        android:drawablePadding="0dp"
+        android:fontFamily="@font/font"
+        android:text="@string/google_signup"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/BSU"
@@ -208,13 +198,13 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="224dp"
-        android:layout_marginEnd="246dp"
-        android:layout_marginRight="246dp"
-        android:backgroundTint="@color/gray"
-        android:clickable="false"
-        android:enabled="false"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:backgroundTint="@color/lightgreen"
+        android:enabled="true"
         android:fontFamily="@font/font"
-        android:text="Sign In"
+        android:text="Sign Up"
         android:textColor="@color/white"
         android:textSize="15sp" />
+
 </RelativeLayout>

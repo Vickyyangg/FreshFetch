@@ -9,7 +9,6 @@
         android:id="@+id/cardView"
         android:layout_width="395dp"
         android:layout_height="128dp"
-
         android:radius="8dp">
 
         <RelativeLayout
@@ -29,7 +28,7 @@
             <!-- Title -->
             <TextView
                 android:id="@+id/itemTitleTextView"
-                android:layout_width="167dp"
+                android:layout_width="143dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_toEndOf="@+id/itemImageView"
@@ -53,11 +52,11 @@
             <!-- Price -->
             <TextView
                 android:id="@+id/itemPriceTextView"
-                android:layout_width="71dp"
+                android:layout_width="86dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/itemTitleTextView"
-                android:layout_marginStart="186dp"
-                android:layout_marginTop="-24dp"
+                android:layout_marginStart="161dp"
+                android:layout_marginTop="-23dp"
                 android:layout_toEndOf="@+id/itemImageView"
                 android:text="$23"
                 android:textAlignment="textEnd"
