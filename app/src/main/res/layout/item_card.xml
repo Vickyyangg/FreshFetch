@@ -1,0 +1,69 @@
+<!-- list_item_layout.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- CardView as the container for the item -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="395dp"
+        android:layout_height="128dp"
+        android:cardElevation="4dp"
+        android:radius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_card"
+            android:padding="16dp">
+
+            <!-- Rounded image -->
+            <ImageView
+                android:id="@+id/itemImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/bestRice"
+                android:src="@drawable/rice_card" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/itemTitleTextView"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/itemImageView"
+                android:text="@string/bestRice"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/itemDescriptionTextView"
+                android:layout_width="263dp"
+                android:layout_height="66dp"
+                android:layout_below="@+id/itemTitleTextView"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/itemImageView"
+                android:text="@string/rice_description"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+
+            <!-- Price -->
+            <TextView
+                android:id="@+id/itemPriceTextView"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemTitleTextView"
+                android:layout_marginStart="186dp"
+                android:layout_marginTop="-24dp"
+                android:layout_toEndOf="@+id/itemImageView"
+                android:text="$23"
+                android:textAlignment="textEnd"
+                android:textColor="@color/green"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

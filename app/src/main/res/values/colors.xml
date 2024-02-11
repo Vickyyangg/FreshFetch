@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#9EB7B4</color>
     <color name="lightgreen">#71B978</color>
+    <color name="yellow">#FFC107</color>
+    <color name="green">#00AF5B</color>
+    <color name="card_gray">#D6E2DB</color>
+    <color name="text_gray">#9F000000</color>
 </resources>

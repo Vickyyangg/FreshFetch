@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.freshfetch.databinding.ActivityLoginBinding
-import com.example.freshfetch.databinding.ActivityMainBinding
+
 
 class Login : AppCompatActivity() {
 
