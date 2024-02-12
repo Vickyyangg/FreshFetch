@@ -1,10 +1,8 @@
 package com.example.project
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.freshfetch.ItemDetail
 import com.example.freshfetch.R
 import com.example.freshfetch.databinding.ActivityDeliveryBinding
 
@@ -28,11 +26,6 @@ class Delivery : AppCompatActivity() {
         binding.itemLists.adapter = adapter
         binding.itemLists.layoutManager = LinearLayoutManager(this)
 
-        adapter.OnItemClick = {
-            val intent =  Intent(this@Delivery, ItemDetail::class.java)
-            intent.putExtra("selectedItem", it)
-            startActivity(intent)
-        }
     }
 
 
