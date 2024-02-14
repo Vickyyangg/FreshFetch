@@ -16,6 +16,12 @@
     <string name="signup_description">Get great experience with us now</string>
     <string name="signup_btn">Sign Up</string>
     <string name="signin_btn">Sign In</string>
-
+    <string name="home_heading">HOME</string>
+    <string name="search">Search your items here</string>
+    <string name="deli_btn">Delivery</string>
+    <string name="pickup_btn">Pick Up</string>
+    <string name="bestRice">Best Rice</string>
+    <string name="home_feature">Features</string>
+    <string name="rice_description">Rice is a versatile staple known for its neutral flavor and essential role in global cuisines.</string>
 
 </resources>
