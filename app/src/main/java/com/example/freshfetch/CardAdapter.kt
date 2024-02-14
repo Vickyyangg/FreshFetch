@@ -1,6 +1,7 @@
 package com.example.freshfetch
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -24,6 +25,16 @@ class MyAdapter(private val context: Context, private val itemList: List<Item>) 
         holder.binding.itemTitleTextView.text = item.title
         holder.binding.itemDescriptionTextView.text = item.description
         holder.binding.itemPriceTextView.text = item.price
+
+
+
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, ItemDetail::class.java)
+            intent.putExtra("ITEM_LIST", ArrayList(itemList)) // this Pass the whole item list
+            intent.putExtra("ITEM_POSITION", position) // this Pass the position of the clicked item
+            context.startActivity(intent)
+        }
+
     }
 
     override fun getItemCount(): Int {

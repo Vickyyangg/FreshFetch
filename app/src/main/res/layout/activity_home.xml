@@ -79,100 +79,126 @@
         android:textColor="#FFFFFF"
         android:textSize="15sp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="364dp"
-        android:layout_height="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="321dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="231dp" />
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="227dp">
 
-    <TextView
-        android:layout_width="149dp"
-        android:layout_height="35dp"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="410dp"
+            android:layout_height="322dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="0dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/featuresBtn"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginEnd="231dp"
-        android:layout_marginBottom="252dp"
-        android:fontFamily="@font/font"
-        android:text="@string/home_feature"
-        android:textStyle="bold"
-        android:textSize="20sp" />
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="97dp">
 
-    <LinearLayout
-        android:layout_width="374dp"
-        android:layout_height="142dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="16dp"
 
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="106dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="395dp"
+            android:layout_height="146dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="-1dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnNearMe"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/lightgreen"
-                android:text="Near Me"
-                app:icon="@drawable/ic_near_me"
-                app:iconGravity="top" />
+                android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnOffers"
-                android:layout_width="0dp"
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNearMe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/lightgreen"
+                    android:text="Near Me"
+                    app:icon="@drawable/ic_near_me"
+                    app:iconGravity="top" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOffers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/lightgreen"
+                    android:text="Offers"
+                    app:icon="@drawable/ic_offers"
+                    app:iconGravity="top" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/lightgreen"
-                android:text="Offers"
-                app:icon="@drawable/ic_offers"
-                app:iconGravity="top" />
-        </LinearLayout>
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPayment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/lightgreen"
+                    android:text="Payment"
+                    app:icon="@drawable/ic_payment"
+                    app:iconGravity="top" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnPayment"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/lightgreen"
-                android:text="Payment"
-                app:icon="@drawable/ic_payment"
-                app:iconGravity="top" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOrders"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/lightgreen"
+                    android:text="Orders"
+                    app:icon="@drawable/ic_orders"
+                    app:iconGravity="top" />
+            </LinearLayout>
+        </RelativeLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnOrders"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/lightgreen"
-                android:text="Orders"
-                app:icon="@drawable/ic_orders"
-                app:iconGravity="top" />
-        </LinearLayout>
-    </LinearLayout>
+        <TextView
+            android:layout_width="346dp"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="48dp"
+            android:fontFamily="@font/font"
+            android:text="@string/home_feature"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
+
+    </RelativeLayout>
 
 </RelativeLayout>
