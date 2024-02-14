@@ -1,6 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+<<<<<<< HEAD
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ItemDetail">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        app:cardCornerRadius="50dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitEnd"
+            android:src="@drawable/cutie" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/DetailedImage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignRight="@+id/cardView"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="298dp"
+        android:layout_toLeftOf="@+id/cardView"
+        android:src="@drawable/icons8_list_25" />
+
+    <SearchView
+        android:id="@+id/SimpleSearch"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="77dp"
+        android:background="@drawable/btn_search"
+        android:minHeight="2dp" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@+id/SimpleSearch"
+        android:src="@drawable/baseline_circle_notifications_24" />
+
+    <Button
+        android:id="@+id/Deli"
+        android:layout_width="144dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/PaleGreen"
+        android:fontFamily="@font/font"
+        android:text="@string/delivery_btn"
+        android:textColor="@color/VinGreen"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="144dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/VinGreen"
+        android:fontFamily="@font/font"
+        android:text="@string/pickup_btn" />
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="270dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/icons8_grain_24"/>
+
+    <LinearLayout
+        android:id="@+id/DetailedItem"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:layout_marginTop="540dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/DetailitemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/font"
+                android:text="Rice"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/DetailitemPrice"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="6dp"
+                android:text="$1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/font"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/DetailitemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/font"
+            android:maxLines="4"
+            android:text="Fresh rice imported directly from farm"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+=======
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
@@ -160,3 +314,4 @@
             android:text="Add to Cart" />
     </LinearLayout>
 </RelativeLayout>
+>>>>>>> main
