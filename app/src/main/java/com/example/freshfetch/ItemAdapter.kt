@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.freshfetch.databinding.ItemlistBinding
 
 class ItemAdapter(private val ListItem:ArrayList<Items>):RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
-    var OnItemClick : ((Items) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val binding = ItemlistBinding.inflate(LayoutInflater.from(parent.context), parent, false)
