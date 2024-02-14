@@ -9,8 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.freshfetch.databinding.ItemCardBinding
 import com.example.freshfetch.Home.Item
 
+
+
 class MyAdapter(private val context: Context, private val itemList: List<Item>) :
     RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemCardBinding.inflate(LayoutInflater.from(parent.context), parent, false)

@@ -1,11 +1,11 @@
 package com.example.freshfetch
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.freshfetch.databinding.ActivityHomeBinding
 import android.os.Parcel
+import androidx.appcompat.widget.SearchView
 import android.os.Parcelable
 
 
@@ -62,33 +62,17 @@ class Home : AppCompatActivity() {
         }
 
     }
-
-
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        //serchview trigger to make features buttons disappear
-        binding.searchView.setOnQueryTextFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                // Show the featuresLayout when SearchView gains focus
-                binding.featuresBtn.visibility = View.VISIBLE
-            } else {
-                // Hide the featuresLayout when SearchView loses focus
-                binding.featuresBtn.visibility = View.GONE
-            }
-        }
-
+        //item list
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         val itemList = mutableListOf(
             Item(1, R.drawable.rice_card, "Best Rice", "Best Rice is a versatile staple known for its neutral flavor and essential role in global cuisines.", "$19", "Aimer", "0921183204", "BangNa", R.drawable.rounded_profile),
-            Item(2, R.drawable.rice_card, "Pure Rice", "Pure Rice is a versatile staple known for its neutral flavor and essential role in global cuisines.", "$29", "Milet", "0823924248", "BangKapi", R.drawable.milet),
+            Item(2, R.drawable.purerice, "Pure Rice", "Pure Rice is a versatile staple known for its neutral flavor and essential role in global cuisines.", "$29", "Milet", "0823924248", "BangKapi", R.drawable.milet),
             Item(3, R.drawable.rice_card, "Pure Rice", "Pure Rice is a versatile staple known for its neutral flavor and essential role in global cuisines.", "$29", "Yoasobi", "0834238249", "Samui", R.drawable.lilas),
             Item(4, R.drawable.rice_card, "Pure Rice", "Pure Rice is a versatile staple known for its neutral flavor and essential role in global cuisines.", "$29", "Tomoo", "0938323893", "BangWa", R.drawable.tomoo),
             Item(5, R.drawable.rice_card, "Pure Rice", "Pure Rice is a versatile staple known for its neutral flavor and essential role in global cuisines.", "$29", "Nao", "0928842739", "Bangkok", R.drawable.rounded_profile),
@@ -99,7 +83,4 @@ class Home : AppCompatActivity() {
         val adapter = MyAdapter(this, itemList)
         binding.recyclerView.adapter = adapter
     }
-
-
-
 }

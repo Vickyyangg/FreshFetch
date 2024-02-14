@@ -40,7 +40,7 @@
         android:contentDescription="Notification Icon"
         android:src="@drawable/notification_bell" />
 
-    <SearchView
+    <android.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
@@ -51,7 +51,9 @@
         android:background="@drawable/edit_text_background"
         android:iconifiedByDefault="false"
         android:padding="8dp"
-        android:queryHint="What are you looking for?" />
+        android:queryHint="What are you looking for?"
+
+    />
 
     <Button
         android:id="@+id/deliveryButton"
