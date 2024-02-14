@@ -7,27 +7,265 @@
     tools:context=".Home">
 
 
-    <Button
-        android:id="@+id/delivery"
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="48dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="309dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        app:cardCornerRadius="500dp">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:srcCompat="@drawable/profile" />
+    </androidx.cardview.widget.CardView>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="282dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="118dp"
-        android:background="@color/black"
-        android:textColor="@color/white"
-        android:text="Delivery" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/search_bkt" >
+
+    </SearchView>
+
+    <Button
+        android:id="@+id/delivery"
+        android:layout_width="143dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="119dp"
+        android:background="@drawable/delivery_btn"
+        android:text="Delivery"
+        android:textAllCaps="false"
+        android:textColor="@color/VinGreen" />
+
 
     <Button
         android:id="@+id/pickup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="143dp"
+        android:layout_height="30dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="114dp"
-        android:textColor="@color/white"
-        android:background="@color/black"
-        android:text="Pickup" />
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="62dp"
+        android:background="@drawable/pickup_btn"
+        android:text="Pickup"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="165dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="32dp"
+        android:layout_height="23dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/list" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="12dp"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="319dp"
+        android:layout_marginBottom="12dp"
+        app:srcCompat="@drawable/user_profile" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="12dp"
+        app:srcCompat="@drawable/clipboard" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="12dp"
+        app:srcCompat="@drawable/email" />
+
+
+        <TextView
+            android:id="@+id/features"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="334dp"
+            android:text="Features"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="108dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="233dp"
+            android:background="@drawable/nearme">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="58dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/gps" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Near me"
+                android:textColor="@color/black"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="108dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="232dp"
+            android:background="@drawable/nearme">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="58dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/tag" />
+
+            <TextView
+                android:id="@+id/offers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="55dp"
+                android:text="Offers"
+                android:textColor="@color/black" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="108dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="96dp"
+            android:background="@drawable/nearme">
+            <ImageView
+                android:id="@+id/imgPayment"
+                android:layout_width="58dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/credit_card" />
+
+            <TextView
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Payment"
+                android:textColor="@color/black"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="108dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="221dp"
+            android:layout_marginBottom="96dp"
+            android:background="@drawable/nearme">
+
+            <ImageView
+                android:id="@+id/imgOrders"
+                android:layout_width="58dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/tracking" />
+
+            <TextView
+                android:id="@+id/orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:text="Orders"
+                android:textColor="@color/black"/>
+        </FrameLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="382dp"
+        android:text="Button" />
+
+
 </RelativeLayout>
