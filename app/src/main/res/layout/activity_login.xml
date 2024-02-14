@@ -74,8 +74,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="76dp"
         android:layout_marginTop="401dp"
-        android:contentDescription="@string/phone_number"
-        android:text="@string/phone_number"
+        android:contentDescription="@string/password_label"
+        android:text="@string/password_label"
         android:textSize="14sp"
         tools:ignore="RelativeOverlap,TextSizeCheck" />
 

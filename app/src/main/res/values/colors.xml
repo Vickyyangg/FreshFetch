@@ -8,8 +8,6 @@
     <color name="green">#00AF5B</color>
     <color name="card_gray">#D6E2DB</color>
     <color name="text_gray">#9F000000</color>
-    <color name="PaleGreen">#DCF4D0</color>
-    <color name="VinGreen">#66A882</color>
-    <color name="lightgray">#E5E4E2</color>
-    <color name="red">#F44336</color>
+    <color name="red">#D8D82424</color>
+    <color name="lightgray">#E4D3D3D6</color>
 </resources>

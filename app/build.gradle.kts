@@ -6,12 +6,12 @@ plugins {
 android {
     namespace = "com.example.freshfetch"
     compileSdk = 34
+
     defaultConfig {
         applicationId = "com.example.freshfetch"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
-
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

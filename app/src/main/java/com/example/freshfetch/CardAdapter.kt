@@ -9,8 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.freshfetch.databinding.ItemCardBinding
 import com.example.freshfetch.Home.Item
 
-
-
 class MyAdapter(private val context: Context, private val itemList: List<Item>) :
     RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
@@ -43,7 +41,6 @@ class MyAdapter(private val context: Context, private val itemList: List<Item>) 
     override fun getItemCount(): Int {
         return itemList.size
     }
-
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val binding: ItemCardBinding = ItemCardBinding.bind(itemView)

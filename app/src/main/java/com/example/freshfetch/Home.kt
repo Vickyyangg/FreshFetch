@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.freshfetch.databinding.ActivityHomeBinding
 import android.os.Parcel
-import androidx.appcompat.widget.SearchView
 import android.os.Parcelable
 
 
