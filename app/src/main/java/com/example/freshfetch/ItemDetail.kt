@@ -34,6 +34,12 @@ class ItemDetail : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //order now
+        binding.btnOrderNow.setOnClickListener {
+            val intent = Intent(this@ItemDetail, Payment::class.java)
+            intent.putExtra("SELECTED_ITEM", selectedItem)
+            startActivity(intent)
+        }
 
         itemList = intent.getParcelableArrayListExtra("ITEM_LIST") ?: emptyList()
         selectedItemPosition = intent.getIntExtra("ITEM_POSITION", -1)

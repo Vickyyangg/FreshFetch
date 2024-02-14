@@ -3,17 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="90dp"
     android:layout_margin="15dp"
-    app:cardBackgroundColor="@color/LightGray"
+    app:cardBackgroundColor="@color/card_gray"
     app:cardCornerRadius="18dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
         android:layout_gravity="center_vertical"
-        android:paddingLeft="12dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/icons8_grain_24" />
+        android:paddingLeft="12dp"
+        android:src="@drawable/rice_card" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
@@ -23,37 +25,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-        <TextView
-            android:id="@+id/itemName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="6dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/font"
-            android:text="Rice"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/font"
+                android:text="Rice"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/itemPrice"
                 android:layout_width="56dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginEnd="6dp"
                 android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/font"
                 android:text="$1"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                android:fontFamily="@font/font"
-                />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
         <TextView
             android:id="@+id/itemDescription"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="315dp"
+            android:layout_height="41dp"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="3dp"
             android:fontFamily="@font/font"

@@ -1,18 +1,11 @@
 package com.example.freshfetch
 
-<<<<<<< HEAD
-import android.content.Intent
-import android.os.Bundle
-import android.view.View
-import androidx.appcompat.app.AppCompatActivity
-=======
 import android.content.Context
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
->>>>>>> main
 import com.example.freshfetch.databinding.ActivityLoginBinding
 
 class Login : AppCompatActivity() {
@@ -57,8 +50,6 @@ class Login : AppCompatActivity() {
             startActivity(intent)
         }
     }
-<<<<<<< HEAD
-=======
 
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
@@ -68,5 +59,4 @@ class Login : AppCompatActivity() {
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
     }
->>>>>>> main
 }

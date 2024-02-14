@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitEnd"
-            android:src="@drawable/cutie" />
+            android:src="@drawable/rounded_profile" />
     </androidx.cardview.widget.CardView>
 
     <ImageView
@@ -30,31 +30,30 @@
         android:layout_marginLeft="48dp"
         android:layout_marginRight="298dp"
         android:layout_toLeftOf="@+id/cardView"
-        android:src="@drawable/icons8_list_25" />
+        android:src="@drawable/baseline_filter_list_24" />
 
 
     <SearchView
         android:id="@+id/SimpleSearch"
-        android:layout_centerVertical="true"
-        android:minHeight="2dp"
-        android:background="@drawable/btn_search"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
+        android:layout_width="296dp"
+        android:layout_height="37dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:layout_marginStart="46dp"
+        android:layout_marginLeft="48dp"
         android:layout_marginTop="77dp"
-        android:layout_marginLeft="48dp"/>
+        android:background="@drawable/edit_text_background"
+        android:minHeight="2dp" />
 
     <ImageView
-        android:layout_width="35dp"
-        android:layout_height="48dp"
-        android:layout_toEndOf="@+id/SimpleSearch"
-        android:layout_marginTop="70dp"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="5dp"
         android:layout_marginLeft="18dp"
-        android:src="@drawable/baseline_circle_notifications_24"
-        />
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@+id/SimpleSearch"
+        android:src="@drawable/notification_bell" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/itemLists"
@@ -83,10 +82,10 @@
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
         android:layout_marginBottom="48dp"
-        android:backgroundTint="@color/PaleGreen"
+        android:backgroundTint="@color/green"
         android:fontFamily="@font/font"
-        android:text="@string/delivery_btn"
-        android:textColor="@color/VinGreen"
+        android:text="@string/deli_btn"
+        android:textColor="@color/white"
         android:textSize="13sp" />
 
     <Button
@@ -100,10 +99,7 @@
         android:layout_marginTop="130dp"
         android:layout_marginEnd="46dp"
         android:layout_marginBottom="48dp"
-        android:backgroundTint="@color/VinGreen"
+        android:backgroundTint="@color/lightgreen"
         android:fontFamily="@font/font"
         android:text="@string/pickup_btn" />
-
-
 </RelativeLayout>
-

@@ -1,14 +1,13 @@
-package com.example.project
+package com.example.freshfetch
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.freshfetch.databinding.ItemlistBinding
-
+import com.example.freshfetch.databinding.DeliveryCardBinding
 class ItemAdapter(private val ListItem:ArrayList<Items>):RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-        val binding = ItemlistBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = DeliveryCardBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ItemViewHolder(binding)
     }
 
@@ -19,9 +18,8 @@ class ItemAdapter(private val ListItem:ArrayList<Items>):RecyclerView.Adapter<It
 
     override fun getItemCount(): Int = this.ListItem.size
 
-    class ItemViewHolder(private val binding: ItemlistBinding) :
+    class ItemViewHolder(private val binding: DeliveryCardBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        //Binding the id with data from itemlist.xml
         fun bind(item: Items) {
             binding.itemName.text = item.name
             binding.itemDescription.text = item.description

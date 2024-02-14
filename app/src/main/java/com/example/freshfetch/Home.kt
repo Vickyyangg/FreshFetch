@@ -1,11 +1,14 @@
 package com.example.freshfetch
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.freshfetch.databinding.ActivityHomeBinding
 import android.os.Parcel
 import android.os.Parcelable
+import android.widget.Toast
+import com.example.project.Delivery
 
 
 class Home : AppCompatActivity() {
@@ -66,6 +69,21 @@ class Home : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        //delivery btn
+       binding.deliveryButton.setOnClickListener {
+            val deliveryIntent = Intent(this@Home, Delivery::class.java)
+            startActivity(deliveryIntent)
+        }
+
+        //payment
+        binding.btnPayment.setOnClickListener {
+            val intent = Intent(this@Home, Payment::class.java)
+            startActivity(intent)
+        }
+
+
 
         //item list
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
