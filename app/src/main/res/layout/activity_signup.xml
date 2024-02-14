@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onBackButtonClick"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="513dp"
+        android:backgroundTint="#00AF5B"
+        android:fontFamily="@font/font"
+        android:text="@string/create_account_btn"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="264dp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/icons8_user_18"
+        android:drawablePadding="14dp"
+        android:ems="10"
+        android:fontFamily="@font/font"
+        android:hint="@string/username_hint"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="245dp"
+        android:text="@string/full_name"
+        tools:ignore="RelativeOverlap" />
+
+    <EditText
+        android:id="@+id/phone_input"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="355dp"
+        android:drawableStart="@drawable/icons8_phone_18"
+        android:drawablePadding="14dp"
+        android:ems="10"
+        android:fontFamily="@font/font"
+        android:hint="@string/number_hint"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:ignore="RelativeOverlap" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="439dp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/icons8_password_18"
+        android:drawablePadding="14dp"
+        android:ems="10"
+        android:fontFamily="@font/font"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="419dp"
+        android:text="@string/password_label"
+        android:textSize="14sp"
+        tools:ignore="RelativeOverlap,TextSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="334dp"
+        android:contentDescription="@string/phone_number"
+        android:text="@string/phone_number"
+        android:textSize="14sp"
+        tools:ignore="RelativeOverlap,TextSizeCheck" />
+
+    <View
+        android:layout_width="600dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/btn_create"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="-86dp"
+        android:background="#D6D6D6" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="66dp"
+        android:fontFamily="@font/font"
+        android:text="@string/signup_header"
+        android:textSize="26sp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="109dp"
+        android:fontFamily="@font/font"
+        android:text="@string/signup_description"
+        android:textColor="#368166"
+        android:textSize="16sp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="241dp"
+        android:fontFamily="@font/font"
+        android:text="@string/or"
+        android:textColor="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/Google"
+        android:layout_width="246dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="163dp"
+        android:backgroundTint="#DEE4E1"
+        android:drawableLeft="@drawable/icons8_google_24"
+        android:drawablePadding="0dp"
+        android:fontFamily="@font/font"
+        android:text="@string/google_signup"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/Apple"
+        android:layout_width="248dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="73dp"
+        android:backgroundTint="@color/black"
+        android:drawableLeft="@drawable/icons8_apple_24"
+        android:fontFamily="@font/font"
+        android:text="@string/apple_signup"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/BSI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="99dp"
+        android:backgroundTint="@color/lightgreen"
+        android:enabled="true"
+        android:fontFamily="@font/font"
+        android:text="@string/signin_btn"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/BSU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="246dp"
+        android:backgroundTint="@color/gray"
+        android:enabled="false"
+        android:fontFamily="@font/font"
+        android:text="@string/signup_btn"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:ignore="RelativeOverlap" />
+</RelativeLayout>
