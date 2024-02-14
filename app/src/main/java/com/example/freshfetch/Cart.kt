@@ -8,6 +8,16 @@ import android.os.Bundle
 import android.content.Intent
 import com.example.freshfetch.databinding.ActivityLoginBinding
 
+<<<<<<< HEAD:app/src/main/java/com/example/freshfetch/Cart.kt
+class Cart : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_cart)
+
+    }
+
+}
+=======
 class Login : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
@@ -60,3 +70,4 @@ class Login : AppCompatActivity() {
         imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
     }
 }
+>>>>>>> main:app/src/main/java/com/example/freshfetch/Login.kt
