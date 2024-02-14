@@ -58,65 +58,78 @@
         android:textStyle="bold" />
 
     <!-- Item description -->
+
+    <!-- Seller info -->
+
+    <!-- Seller profile icon -->
+
     <TextView
         android:id="@+id/itemDescription"
-        android:layout_width="match_parent"
+        android:layout_width="358dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/itemName"
-        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:textColor="@color/text_gray"
         android:text="sfkjskljfoijwflk sajoi fj lkdsjfdsjflkjdsljflsjfl;sufoijewkfj dsljflkdsfdgljds gdshlkg sldgdjflkdsoaflds foiwlk dslfdsfdsfhds"
         android:textSize="16sp" />
 
-    <!-- Seller info -->
+    <!-- Seller contact information -->
+
+
+    <!-- Order Now and Add to Cart buttons -->
+
+    <ImageView
+        android:id="@+id/sellerProfileIcon"
+        android:layout_width="74dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/itemDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="312dp"
+        android:background="@drawable/rounded_img"
+        android:contentDescription="Seller Profile Icon"
+        android:src="@drawable/tomoo" />
+
     <TextView
         android:id="@+id/sellerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/itemDescription"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="33dp"
         android:text="Seller Name"
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <!-- Seller profile icon -->
-    <ImageView
-        android:id="@+id/sellerProfileIcon"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_below="@id/itemDescription"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_alignParentEnd="true"
-        android:contentDescription="Seller Profile Icon"
-        android:src="@drawable/rounded_profile" />
-
-    <!-- Seller contact information -->
     <TextView
         android:id="@+id/sellerPhone"
-        android:layout_width="match_parent"
+        android:layout_width="201dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/sellerName"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="7dp"
         android:layout_marginEnd="16dp"
         android:text="Seller Contact Information"
+        android:textColor="@color/text_gray"
         android:textSize="16sp" />
 
-
-    <!-- Order Now and Add to Cart buttons -->
     <TextView
         android:id="@+id/sellerAddress"
-        android:layout_width="match_parent"
+        android:layout_width="201dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/sellerName"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="16dp"
         android:text="Seller Contact Information"
+        android:textColor="@color/text_gray"
         android:textSize="16sp" />
 
     <LinearLayout
@@ -134,6 +147,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:layout_marginRight="20sp"
+
             android:backgroundTint="@color/lightgreen"
             android:text="Order Now" />
 

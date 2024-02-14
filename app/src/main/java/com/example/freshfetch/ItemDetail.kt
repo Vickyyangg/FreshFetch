@@ -44,5 +44,6 @@ class ItemDetail : AppCompatActivity() {
         binding.sellerName.text = selectedItem.seller
         binding.sellerPhone.text = selectedItem.sellerNo
         binding.sellerAddress.text = selectedItem.sellerAdr
+        binding.sellerProfileIcon.setImageResource(selectedItem.sellerPic)
     }
 }
