@@ -16,8 +16,12 @@
             android:name=".ItemDetail"
             android:exported="true" />
         <activity
-            android:name=".SignUp"
+            android:name=".Cart"
             android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name=".Login"
             android:exported="false" />
@@ -33,6 +37,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+
     </application>
 
 </manifest>
