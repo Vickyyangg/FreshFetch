@@ -2,13 +2,11 @@ package com.example.freshfetch
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Parcel
+import android.os.Parcelable
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.freshfetch.databinding.ActivityHomeBinding
-import android.os.Parcel
-import android.os.Parcelable
-import android.widget.Toast
-import com.example.project.Delivery
 
 
 class Home : AppCompatActivity() {

@@ -33,7 +33,7 @@
         android:src="@drawable/baseline_filter_list_24" />
 
 
-    <SearchView
+    <android.widget.SearchView
         android:id="@+id/SimpleSearch"
         android:layout_width="296dp"
         android:layout_height="37dp"
