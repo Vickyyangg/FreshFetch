@@ -1,11 +1,8 @@
-package com.example.project
+package com.example.freshfetch
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.freshfetch.ItemAdapter
-import com.example.freshfetch.Items
-import com.example.freshfetch.R
 import com.example.freshfetch.databinding.ActivityDeliveryBinding
 
 class Delivery : AppCompatActivity() {
@@ -18,7 +15,7 @@ class Delivery : AppCompatActivity() {
 
         val items = arrayListOf(
             Items("Rice", "$13", R.drawable.rice_card, "Fresh rice imported directly from farm"),
-            Items("Tomato", "$4", R.drawable.tomato, "Fresh Tomatoes imported from an organic farm"),
+            Items("Tomato", "$4", R.drawable.tomato, "Fresh Tomatoes imported organically"),
             Items("Cucumber", "$5", R.drawable.cucumber, "Fresh and Crunchy Cucumber"),
             Items("Grapes", "$5.5", R.drawable.grapes, "Imported Freshly from Local farms"),
             Items("Lettuce", "$3", R.drawable.lettuce, "Fresh Lettuce imported from farms"),
@@ -27,5 +24,7 @@ class Delivery : AppCompatActivity() {
         val adapter = ItemAdapter(items)
         binding.itemLists.adapter = adapter
         binding.itemLists.layoutManager = LinearLayoutManager(this)
+
+
     }
 }

@@ -12,6 +12,7 @@ class ItemAdapter(private val ListItem:ArrayList<Items>):RecyclerView.Adapter<It
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+        // Set data to the views
         val item = ListItem[position]
         holder.bind(item)
     }
